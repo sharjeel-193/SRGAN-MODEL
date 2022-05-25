@@ -58,9 +58,8 @@ for file in input_imgs:
   print('\tcost ' + str(elapsed) + 's')
   out_img = ToPILImage()(out[0].data.cpu())
   print('\tshape ' + str(np.asarray(out_img).shape))
-  print('\tshape ' + str(np.asarray(hr_img).shape))
   # score = ssim(np.asarray(out_img), np.asarray(hr_img))
-  print('Difference: '+ str(check_similarity(hr_img, out_img)))
+  print('Similarity: '+ str(check_similarity(hr_img, out_img)))
   out_img.save('test_imgs/output/SR_' + file)
   # print(filename)
 
