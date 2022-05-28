@@ -31,15 +31,6 @@ optional arguments:
 ```
 The output val super resolution images are on `training_results` directory.
 
-### Test Benchmark Datasets
-```
-python test_benchmark.py
-
-optional arguments:
---upscale_factor              super resolution upscale factor [default value is 4]
---model_name                  generator model epoch name [default value is netG_epoch_4_100.pth]
-```
-The output super resolution images are on `benchmark_results` directory.
 
 ### Test Single Image
 ```
@@ -53,17 +44,5 @@ optional arguments:
 ```
 The output super resolution image are on the same directory.
 
-### Test Single Video
-```
-python test_video.py
 
-optional arguments:
---upscale_factor              super resolution upscale factor [default value is 4]
---video_name                  test low resolution video name
---model_name                  generator model epoch name [default value is netG_epoch_4_100.pth]
-```
-The output super resolution video and compared video are on the same directory.
-
-## Benchmarks
-**Upscale Factor = 2**
 
