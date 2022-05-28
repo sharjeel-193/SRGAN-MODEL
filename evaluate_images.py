@@ -44,6 +44,8 @@ HR_path = 'test_imgs/hr'
 input_imgs = os.listdir(input_path)
 HR_imgs = os.listdir(HR_path)
 for file in input_imgs:
+  if(file=='gitkeep'):
+    continue
   img_path = (os.path.join(input_path, file))
   image = Image.open(img_path)
   hr_img = Image.open(os.path.join(HR_path, file[0:4]+'.png'))
